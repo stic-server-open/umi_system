@@ -25,3 +25,11 @@
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
+
+# 禁用磁盘I/O统计 (UFS)
+echo "0" > /sys/block/sda/queue/iostats
+echo "0" > /sys/block/sdb/queue/iostats
+echo "0" > /sys/block/sdc/queue/iostats
+echo "0" > /sys/block/sdd/queue/iostats
+echo "0" > /sys/block/sde/queue/iostats
+echo "0" > /sys/block/sdf/queue/iostats
