@@ -61,3 +61,4 @@ echo "20" > /sys/fs/f2fs/dm-4/min_fsync_blocks
 
 # 删除不必要网络日志 (位于/data/vendor/wifi_logs)
 stop cnss_diag
+rm -rf /data/vendor/wlan_logs
