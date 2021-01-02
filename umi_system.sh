@@ -37,3 +37,6 @@ echo "0" > /sys/block/sdf/queue/iostats
 # 禁用binder调试
 echo "0" > /sys/module/binder/parameters/debug_mask
 echo "0" > /sys/module/binder_alloc/parameters/debug_mask
+
+# 禁用内核调试
+echo "0" > /sys/module/msm_show_resume_irq/parameters/debug_mask
