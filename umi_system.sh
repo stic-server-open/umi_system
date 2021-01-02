@@ -53,3 +53,8 @@ echo "11" > /proc/sys/kernel/mi_iolimit
 
 # F2FS MIN FSYNC (可能没效果,如果是官改包这里会提示error)
 echo "20" > /sys/fs/f2fs/dm-4/min_fsync_blocks
+
+# F2FS 垃圾回收 (实验性项目,默认使用#号屏蔽,如果想尝鲜可以把#号删除,但可能会带来性能损失以及续航问题.)
+# echo "30000" > /sys/fs/f2fs/dm-4/gc_max_sleep_time
+# echo "3000" > /sys/fs/f2fs/dm-4/gc_min_sleep_time
+# echo "120000" > /sys/fs/f2fs/dm-4/gc_no_gc_sleep_time
