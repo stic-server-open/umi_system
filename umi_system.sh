@@ -50,3 +50,6 @@ echo "N" > /sys/kernel/debug/debug_enabled
 echo "1" > /sys/kernel/mi_reclaim/enable
 echo "1" > /sys/kernel/iolimit/enable
 echo "11" > /proc/sys/kernel/mi_iolimit
+
+# F2FS MIN FSYNC (可能没效果,如果是官改包这里会提示error)
+echo "20" > /sys/fs/f2fs/dm-4/min_fsync_blocks
