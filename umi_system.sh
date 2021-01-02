@@ -58,3 +58,6 @@ echo "20" > /sys/fs/f2fs/dm-4/min_fsync_blocks
 # echo "30000" > /sys/fs/f2fs/dm-4/gc_max_sleep_time
 # echo "3000" > /sys/fs/f2fs/dm-4/gc_min_sleep_time
 # echo "120000" > /sys/fs/f2fs/dm-4/gc_no_gc_sleep_time
+
+# 删除不必要网络日志 (位于/data/vendor/wifi_logs)
+stop cnss_diag
