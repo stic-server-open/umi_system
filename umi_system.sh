@@ -45,3 +45,8 @@ echo "0" > /sys/kernel/iolimit/debug
 echo "0" > /sys/kernel/mi_reclaim/debug
 echo "0" > /proc/sys/migt/migt_sched_debug
 echo "N" > /sys/kernel/debug/debug_enabled
+
+# 开启小米优化功能
+echo "1" > /sys/kernel/mi_reclaim/enable
+echo "1" > /sys/kernel/iolimit/enable
+echo "11" > /proc/sys/kernel/mi_iolimit
