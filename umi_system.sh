@@ -1,5 +1,6 @@
 #! /vendor/bin/sh
 # Copyright (C) 2016-2019, The Linux Foundation. All rights reserved.
+# Copyright (C) 2021 Amktiao (Coolapk)
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -25,6 +26,15 @@
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
+
+##############################################
+# 仅在小米10的12.0.11.0稳定版(Android 10)上进行测试.#
+##############################################
+# 小米是一家非常良心的公司,一样的处理器,一样的源码,  #
+# 就是不给已发布的"旧"机型上,而是用"硬件不支持"敷衍.#
+# 所以就诞生了这个脚本,因为脚本无法修改底层实质上的 #
+# 东西跟代码,所以起到的作用可能很少.                                   #  
+##############################################
 
 # 禁用磁盘I/O统计 (UFS)
 echo "0" > /sys/block/sda/queue/iostats
