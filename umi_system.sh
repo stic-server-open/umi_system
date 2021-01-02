@@ -40,3 +40,8 @@ echo "0" > /sys/module/binder_alloc/parameters/debug_mask
 
 # 禁用内核调试
 echo "0" > /sys/module/msm_show_resume_irq/parameters/debug_mask
+echo "0" > /sys/module/millet_core/parameters/millet_debug
+echo "0" > /sys/kernel/iolimit/debug
+echo "0" > /sys/kernel/mi_reclaim/debug
+echo "0" > /proc/sys/migt/migt_sched_debug
+echo "N" > /sys/kernel/debug/debug_enabled
